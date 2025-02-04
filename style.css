@@ -64,6 +64,26 @@ ul {
     padding-left: 20px;
 }
 
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.project-card summary {
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
 /* Image styling */
 img {
     display: block;

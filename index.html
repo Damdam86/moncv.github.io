@@ -1,120 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<link rel="stylesheet" href="style.css"/>
-<title>CV de Damien COHEN</title>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>CV de Damien COHEN</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Styles de base */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, section {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      display: block;
+      margin: 0 auto 10px;
+      width: 150px;
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
+    h1, h2, h3, h4 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Détails repliables */
+    details {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    details summary {
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 5px;
+      background: #eaeaea;
+      border-radius: 4px;
+      transition: transform 0.3s ease-in-out;
+    }
+    details summary:hover {
+      transform: scale(1.02);
+    }
+    details p, details ul {
+      margin-left: 20px;
+    }
+    /* Cartes projets */
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      background: #fafafa;
+      transition: transform 0.3s ease-in-out;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .project-card summary {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 5px;
+      background: #e0e0e0;
+      border-radius: 4px;
+    }
+    .headline {
+        text-align: center;
+        font-size: 1.8em; /* Ajustez la taille selon vos préférences */
+        font-weight: bold; /* Facultatif : rend le texte en gras */
+        margin: 20px 0; /* Facultatif : ajoute un peu d'espace autour */
+}
+  </style>
 </head>
-
 <body>
-<h1>CV de Damien COHEN</h1>
-<img src="https://media.licdn.com/dms/image/v2/C5603AQGKY4oUCOL5uA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517443718071?e=1737590400&v=beta&t=1T21qhaqfkxf9IK0NLRVkWyK0k5zlA7Qkp_M8G0n_AA" alt="Photo de profil" style="border-radius: 50%; width: 150px; display: block; margin: 0 auto;">
 
-<h2>Qui je suis</h2>
-<p>38 ans, papa de 2 enfants. J'habite à Valence dans la Drôme. Anciennement Directeur de la communication chez Minalogic, j'ai une solide expertise dans l’animation des réseaux sociaux, la rédaction de contenu et la gestion de communautés thématiques dans les secteurs de la photonique, de la micro-nano électronique et des logiciels.</p> 
-<br>
-<p><a href="https://www.minalogic.com">Minalogic</a>, un pôle de compétitivité de renom en région Auvergne-Rhône-Alpes, basé à Grenoble, Lyon, Saint-Étienne et Valence. Durant plus de 10 ans, j'ai eu l'opportunité de gérer plusieurs projets (innovation, communication etc.). Ma dernière expérience ma permis de pilote la stratégie de communication du pôle en mettant en lumière l'innovation technologique de nos adhérents.</p> 
-<br>
-<p>Actuellement en reconversion Data Analyste à la <a href="http://www.wildcodeschool.com">Wild Code School</a>, je suis de nature curieux et passionné par les nouvelles technologies, j’ai également ouvert une chaîne TikTok dédiée à cet univers pour toucher un plus large public.</p> 
+  <!-- En-tête -->
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/C5603AQGKY4oUCOL5uA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517443718071?e=1744243200&v=beta&t=SpHnO5PNI4R7BEVcUMEqV4aOI9dM-pRf5X1ciTUf2Ps" alt="Photo de profil">
+    <h1>Damien COHEN</h1>
+    <p class="headline">Data Analyst / Chef de projet / Directeur de la communication</p>
+    </header>
 
-<h2>Mes expériences</h2>
+  <!-- Qui je suis -->
+  <section id="about">
+    <h2>Qui je suis</h2>
+    <p>
+      Je m'appelle Damien COHEN. Fort de plus de 10 ans d'expérience en communication digitale, j'ai piloté des projets innovants et techniques dans des contextes exigeants – que ce soit à la Direction Générale de l’Armement, à l’Ambassade de France au Canada ou sur le programme Easytech de l’IRT Nanoelec, soutenu par la Région Auvergne-Rhône-Alpes.
+    </p>
+    <p>
+      J'ai participé à de nombreux salons en France et à l’étranger (CES à Las Vegas, SIDO à Lyon, etc.), assurant la représentation officielle et le développement territorial. Ces missions m'ont permis d'accompagner des entreprises dans leurs démarches de financement, d'innovation et d'implantation.
+    </p>
+    <p>
+      Passionné par les nouvelles technologies, j'ai eu l'occasion d'accompagner des centaines de projets et de travailler en étroite collaboration avec des laboratoires de recherche et des entreprises innovantes. Je maîtrise parfaitement les règles de sécurité et de confidentialité et possède une solide formation en stratégie internationale, défense et gestion de crise (Master IRIS, Licence en sciences politiques).
+    </p>
+    <p>
+      Sociable, diplomate et à l'aise dans les relations publiques, j'ai animé de nombreuses réunions, brainstormings et missions de prospection. Agile, autonome et curieux, j'aime apprendre et relever de nouveaux défis.
+    </p>
+  </section>
 
-<details><span style="color: red; font-size: 12px;">▲</span> Minalogic - Directeur de la communication - 10 ans <summary><h3>Minalogic - 10 ans</h3></summary>
+  <!-- Expériences professionnelles -->
+  <section id="experience">
+    <h2>Expériences</h2>
 
-    <p><strong>Directeur de la communication - CDI</strong><br>
-    juil. 2022 - juil. 2024 · 2 ans<br>
-    Grenoble, Auvergne-Rhône-Alpes, France</p>
-    <ul>
-        <li>Élaboration et pilotage de la stratégie de communication de Minalogic</li>
-        <li>Développement de la notoriété de la marque à travers des actions de communication ciblées</li>
-        <li>Gestion des réseaux sociaux et création de contenu digital (images, infographies, vidéos, podcasts)</li>
-        <li>Reporting et analyse des retombées médiatiques et des indicateurs de performance</li>
-    </ul>
+    <details>
+      <summary>Minalogic (10 ans)</summary>
+      <p><strong>Directeur de la communication</strong> | Juil. 2022 – Juil. 2024, Grenoble</p>
+      <ul>
+        <li>Stratégie et pilotage de la communication</li>
+        <li>Gestion des réseaux sociaux et création de contenu digital</li>
+        <li>Reporting et analyse des retombées médiatiques</li>
+      </ul>
+      <p><strong>Responsable Animation Réseau</strong> | Févr. 2021 – Juil. 2022</p>
+      <ul>
+        <li>Animation et modération de communautés</li>
+        <li>Lancement et développement d'une plateforme dédiée</li>
+      </ul>
+      <p><strong>Responsable programme EASYTECH / EASYINDUS</strong> | Août 2014 – Févr. 2021, Région de Grenoble</p>
+      <ul>
+        <li>Management du dispositif pour plus de 400 entreprises accompagnées</li>
+        <li>Coordination avec partenaires et laboratoires, gestion d’un fonds de plus de 6M€</li>
+        <li>Création d’outils de communication et représentation sur salons internationaux (CES, SIDO, MEDPI)</li>
+      </ul>
+    </details>
 
-    <p><strong>Responsable de l'animation réseau - CDI</strong><br>
-    févr. 2021 - juil. 2022 · 1 an 6 mois<br>
-    Grenoble, Auvergne-Rhône-Alpes, France</p>
-    <ul>
-        <li>Animation des communautés et renforcement de la cohésion de l’écosystème</li>
-        <li>Structuration et modération des groupes pour favoriser les échanges entre les membres</li>
-        <li>Développement et lancement d'une nouvelle plateforme dédiée à l'animation du réseau Minalogic</li>
-        <li>Suivi et analyse de la participation des membres et des retours d’engagement</li>
-    </ul>
+    <details>
+      <summary>Co-fondateur Genea-Art (3 ans 5 mois)</summary>
+      <p>Sept. 2020 – Janv. 2024, Fontaine</p>
+      <p>Création et gestion d'une plateforme innovante pour la création et l'impression d'arbres généalogiques.</p>
+    </details>
 
-    <p><strong>Responsable programme EASYTECH / EASYINDUS - CDI</strong><br>
-    août 2014 - févr. 2021 · 6 ans 7 mois<br>
-    Grenoble, Auvergne-Rhône-Alpes, France</p>
-    <p>Easytech est un programme destiné aux PME souhaitant intégrer de l’intelligence dans leurs produits, en co-finançant des projets innovants intégrant des technologies du numérique (électronique, logiciel, photonique) issues des organismes de recherche et des écoles d’ingénieurs de la région. Ce programme est soutenu par l'Institut de Recherche Technologique (IRT) Nanoelec, la Région Auvergne-Rhône-Alpes et les collectivités territoriales.</p>
-    <ul>
-        <li><strong>Gestion et animation du dispositif :</strong> Management de plus de 400 entreprises accompagnées, gestion d'un fonds de 6 M€, animation des partenaires et laboratoires prestataires.</li>
-        <li><strong>Interface :</strong> Interface avec les entreprises et les laboratoires partenaires, coordination avec les prescripteurs du programme, et collaboration avec les directeurs techniques de Minalogic.</li>
-        <li><strong>Communication :</strong> Gestion de la marque EasyTech / EasyIndus, création de vidéos et articles, élaboration des outils de communication (plaquettes, pages internet, newsletters), et représentation sur divers salons internationaux (CES - Las Vegas, SIDO - Lyon, MEDPI - Monaco).</li>
-    </ul>
-
-</details>
-
-
-<details><summary><h3>Co-fondateur Genea-Art - +3 ans</h3></summary>
-    <p>sept. 2020 - janv. 2024<br>
-    Fontaine, Auvergne-Rhône-Alpes, France</p>
-    <p>Plateforme pour la création et l'impression d'arbres généalogiques modernes et design.</p>
-</details>
-
-<details><summary><h3>CODEL - Chartres - Eure-et-Loir - 2 ans</h3></summary>
-    <p><strong>Chargé de Mission Prospection</strong><br>
-    sept. 2012 - juil. 2014</p>
-    <ul>
+    <details>
+      <summary>CODEL - Chargé de Mission Prospection (1 an 11 mois)</summary>
+      <p>Sept. 2012 – Juil. 2014, Chartres</p>
+      <ul>
         <li>Prospection et accompagnement d'entreprises</li>
         <li>Conseil en implantation et mise en réseau</li>
-        <li>Représentation sur salon (France et international)</li>
         <li>Participation à la plateforme de Crowdfunding "Coupdepousse28.com"</li>
-    </ul>
-</details>
+      </ul>
+    </details>
 
-<details><summary><h3>Ambassade de France au Canada - 7 mois</h3></summary>
-    <p><strong>Chargé de mission</strong><br>
-    juil. 2011 - janv. 2012<br>
-    Région de Ottawa, Canada</p>
-    <ul>
-        <li>Analyse de marché</li>
-        <li>Veille économique et technologique</li>
-        <li>Représentation sur différents salons</li>
-    </ul>
-</details>
+    <details>
+      <summary>Ambassade de France au Canada - Chargé de mission (7 mois)</summary>
+      <p>Juil. 2011 – Janv. 2012, Ottawa</p>
+      <ul>
+        <li>Analyse de marché et veille économique</li>
+        <li>Représentation sur divers salons</li>
+      </ul>
+    </details>
 
-<details><summary><h3>Direction générale de l'armement - 5 mois</h3></summary>
-    <p><strong>Chargé de mission</strong><br>
-    mars 2011 - juil. 2011<br>
-    Bagneux, France</p>
-    <ul>
-        <li>Étude d'opportunité pour le développement de technologies de rupture</li>
-        <li>Benchmark, business plan et analyse SWOT</li>
-    </ul>
-</details>
+    <details>
+      <summary>Direction Générale de l'Armement - Chargé de mission (5 mois)</summary>
+      <p>Mars 2011 – Juil. 2011, Bagneux</p>
+      <ul>
+        <li>Réalisation d'une étude d'opportunité sur une technologie de rupture</li>
+        <li>Benchmark, élaboration d'un business plan et analyse SWOT</li>
+      </ul>
+    </details>
+  </section>
 
-<br>
-<h2>Mes formations</h2>
+  <!-- Formation -->
+  <section id="formation">
+    <h2>Formation</h2>
 
-<details>
-    <summary><h3>Wild Code School</h3></summary>
-    <p><strong>Data Analyste</strong><br>
-    sept. 2024 - févr. 2025</p>
-    <p>Formation intensive visant à acquérir des compétences en analyse de données, avec un accent sur les technologies de pointe en data science.</p>
-</details>
+    <details open>
+      <summary>Wild Code School</summary>
+      <p><strong>Data Analyst</strong> | Sept. 2024 – Fév. 2025</p>
+      <p>
+        Bootcamp intensif combinant théorie et pratique pour maîtriser l'analyse de données via des outils modernes.  
+        <a href="https://apply.wildcodeschool.com/fr-fr/formation-data-analyst-en-bootcamp?utm_feeditemid=&utm_device=c&utm_term=&utm_source=google&utm_medium=ppc&utm_campaign=FR-GGL-PERFORMANCE+MAX+DATA&hsa_cam=21760099910&hsa_grp=&hsa_mt=&hsa_src=x&hsa_ad=&hsa_acc=4421706736&hsa_net=adwords&hsa_kw=&hsa_tgt=&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAkoe9BhDYARIsAH85cDNFrlGKzZDeGRih45Vsjde54zHOsAPyEW5lbvBc7ONUHyeXDr7J63YaAkbSEALw_wcB" target="_blank">En savoir plus</a>.
+      </p>
+      
+      <h4>Outils & Langages Appris</h4>
+      <ul>
+        <li><strong>Langages :</strong> Python, SQL, HTML &amp; CSS</li>
+        <li><strong>Bibliothèques / Frameworks :</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly-Express, Streamlit</li>
+        <li><strong>Outils et techniques :</strong> Préparation &amp; nettoyage des données, modélisation statistique</li>
+        <li><strong>Projets spécifiques :</strong> Prefect (pipelines ETL), Selenium (web scraping), AWS3 &amp; PostgreSQL, Dash (tableaux de bord interactifs)</li>
+      </ul>
+      
+      <h4>Projets réalisés</h4>
+      <div class="project-container">
+        <!-- Projet 1 -->
+        <details class="project-card">
+          <summary>Meetflix - Système de recommandation de films</summary>
+          <p>
+            Création d'un système de recommandation de films utilisant Python, HTML/CSS et Streamlit.
+          </p>
+          <ul>
+            <li>Librairies : Pandas, NumPy, Scikit-learn, Matplotlib, Plotly-Express, Seaborn</li>
+            <li>APIs : TMDB &amp; OpenAI</li>
+          </ul>
+          <p>GitHub : <a href="https://github.com/Damdam86/Meetflix" target="_blank">Meetflix</a></p>
+        </details>
+        
+        <!-- Projet 2 -->
+        <details class="project-card">
+          <summary>StarHub (en cours) - Annuaire startups françaises</summary>
+          <p>
+            Création d'une base de données de startups françaises avec un pipeline ETL complet.
+          </p>
+          <ul>
+            <li><strong>Objectifs :</strong> Collecte, nettoyage, pipeline ETL, visualisation interactive et enrichissement IA</li>
+            <li><strong>Outils :</strong> Prefect, Pandas, Selenium, AWS3, PostgreSQL, Dash</li>
+          </ul>
+          <p>GitHub : <a href="https://github.com/Damdam86/WildTech" target="_blank">WildTech</a></p>
+        </details>
+        
+        <!-- Projet 3 -->
+        <details class="project-card">
+          <summary>A venir</summary>
+          <p>Projet à venir...</p>
+        </details>
+      </div>
+    </details>
 
-<details>
-    <summary><h3>IRIS Sup'</h3></summary>
-    <p><strong>Master 2 (M2) - Analyste en stratégie internationale, Défense, Sécurité et Gestion de crise</strong><br>
-    2009 - 2011</p>
-    <p>Vice Président de l'Association des Étudiants (2009-2010)</p>
-    <p>Diplôme destiné aux professionnels en analyse stratégique, conseil et prise de décision en défense et sécurité.</p>
-</details>
+    <details>
+      <summary>IRIS Sup'</summary>
+      <p><strong>Master 2 - Analyste en stratégie internationale, Défense, Sécurité et Gestion de crise</strong> | 2009 – 2011</p>
+      <p>Vice-Président de l'Association des Étudiants.</p>
+    </details>
 
-<details>
-    <summary><h3>Université Jean Moulin Lyon 3</h3></summary>
-    <p><strong>Licence, Science politique : Relations internationales</strong><br>
-    2004 - 2007</p>
-</details>
+    <details>
+      <summary>Université Jean Moulin Lyon 3</summary>
+      <p><strong>Licence en Science politique</strong> | 2004 – 2007</p>
+    </details>
+  </section>
 
-</body> 
+</body>
 </html>
